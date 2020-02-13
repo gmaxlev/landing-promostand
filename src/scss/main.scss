@@ -1,0 +1,19 @@
+// Переменные (breakpoints, цвета, шрифты и т. д.)
+@import "./variables";
+
+// Шрифты
+@import "./modules/fonts";
+
+// Responsive
+@import "./modules/breakpoints";
+
+// Сброс стандартных стилей (normalize.css)
+@import "./vendor/normalize";
+
+// animate.css
+@import "./vendor/animate";
+
+// Глобальные стили
+@import "./global";
+
+// Блоки (БЭМ)
