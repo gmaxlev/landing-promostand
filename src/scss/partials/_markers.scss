@@ -1,0 +1,11 @@
+.markers {
+  height: 537px;
+  margin-top: 75px;
+  @include media-breakpoint-down(sm) {
+    height: 300px;
+  }
+}
+
+#mapmarkers {
+  height: 100%;
+}

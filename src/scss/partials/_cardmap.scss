@@ -1,0 +1,37 @@
+.cardmap {
+  position: absolute;
+  z-index: 500;
+  top: 106px;
+  width: 457px;
+  height: 391px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 70px 50px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include media-breakpoint-down(md) {
+    width: 327px;
+    height: 328px;
+    padding: 50px 30px;
+  }
+  @include media-breakpoint-down(sm) {
+    position: static;
+    padding: 50px 20px;
+    width: auto;
+    height: auto;
+    display: block;
+  }
+}
+
+.cardmap__content {
+  @include media-breakpoint-down(sm) {
+    margin: 30px 0;
+  }
+}
+
+.cardmap__title {
+  font-size: 36px;
+  line-height: 3rem;
+}

@@ -1,0 +1,6 @@
+.section-stock {
+  margin-bottom: 90px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,69 @@
+.intro {
+  background-color: #000;
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(xs) {
+    height: auto;
+    padding: 100px 0;
+    padding-bottom: 40px;
+  }
+}
+
+.intro__header {
+  color: #fff;
+  position: relative;
+  margin-bottom: 86px;
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    top: calc(100% + 43px);
+    left: 7px;
+  }
+}
+
+.intro__title {
+  font-size: 3.75rem;
+  margin-bottom: 3px;
+  @include media-breakpoint-down(xs) {
+    font-size: 2.1rem;
+  }
+}
+
+.intro__subtitle {
+  font-size: 2.25rem;
+  @include media-breakpoint-down(xs) {
+    font-size: 1.5rem;
+  }
+}
+
+.intro__act {
+  margin-top: 65px;
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+  max-width: 300px;
+  width: 100%;
+  @include media-breakpoint-down(xs) {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.intro__content {
+  position: relative;
+}
+
+.intro__places {
+  position: relative;
+  z-index: 2;
+}

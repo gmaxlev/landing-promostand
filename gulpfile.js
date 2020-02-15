@@ -113,11 +113,10 @@ function videos() {
 }
 
 function images() {
-  return (
-    gulp
-      .src(paths["images"])
-      .pipe(newer("dist/img"))
-      /* .pipe(
+  return gulp
+    .src(paths["images"])
+    .pipe(newer("dist/img"))
+    .pipe(
       imagemin([
         imagemin.gifsicle({
           interlaced: true
@@ -138,10 +137,9 @@ function images() {
           ]
         })
       ])
-    ) */
-      .pipe(gulp.dest("dist/img"))
-      .pipe(browsersync.stream())
-  );
+    )
+    .pipe(gulp.dest("dist/img"))
+    .pipe(browsersync.stream());
 }
 
 function googleFonts() {

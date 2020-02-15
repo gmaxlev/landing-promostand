@@ -1,0 +1,26 @@
+.phone-header {
+  white-space: nowrap;
+  font-size: 1.125rem;
+  color: $color-b;
+  display: inline-block;
+  position: relative;
+  @include media-breakpoint-down(xs) {
+    font-size: 1rem;
+  }
+  &::before {
+    content: "";
+    width: 13px;
+    height: 14px;
+    position: absolute;
+    background-image: url(../img/icons/phone.png);
+    right: calc(100% + 11px);
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media-breakpoint-down(xs) {
+      right: calc(100% + 5px);
+    }
+  }
+}

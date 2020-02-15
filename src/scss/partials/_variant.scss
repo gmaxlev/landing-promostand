@@ -1,0 +1,58 @@
+.variant {
+  display: flex;
+  align-items: center;
+  &:hover {
+    .variant__effect {
+      transform: scale(1.2);
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    flex-direction: column;
+  }
+}
+
+.variant__img {
+  width: 100%;
+  min-width: 220px;
+  position: relative;
+  overflow: hidden;
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 19px;
+  }
+  & > img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+
+.variant__about {
+  padding-left: 20px;
+  box-sizing: border-box;
+  @include media-breakpoint-down(xs) {
+    padding-left: 0;
+  }
+}
+
+.variant__name {
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 11px;
+}
+
+.variant__comment {
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+}
+
+.variant__effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: transform 2s;
+  & > img {
+    width: 100%;
+    max-width: 100%;
+  }
+}

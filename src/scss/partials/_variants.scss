@@ -1,0 +1,12 @@
+.variants {
+}
+
+.variants__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,17 @@
+.langs {
+}
+
+.langs__item {
+  display: inline-block;
+  margin-right: 13px;
+  color: #fff;
+  text-decoration: underline;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.langs__item_active {
+  color: $color-a;
+  text-decoration: none;
+}

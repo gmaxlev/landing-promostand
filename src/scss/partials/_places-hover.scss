@@ -1,0 +1,29 @@
+.places-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 3;
+  @media (pointer: coarse) and (hover: none) {
+    display: none;
+  }
+}
+
+.places-hover__item {
+  position: relative;
+  width: 25%;
+  transition: width 1s;
+  border-right: 1px solid transparent;
+  box-sizing: border-box;
+  &:last-child {
+    border-right: 0;
+  }
+  &:hover {
+    width: 40%;
+    @include media-breakpoint-down(sm) {
+      width: 70%;
+    }
+  }
+}

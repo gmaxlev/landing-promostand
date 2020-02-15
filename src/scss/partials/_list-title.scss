@@ -1,0 +1,13 @@
+.list-title {
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.list-title_big {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  @include media-breakpoint-down(xs) {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}

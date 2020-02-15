@@ -1,0 +1,17 @@
+.container {
+  max-width: 1180px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+  @include media-breakpoint-down(xs) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.container_rel {
+  position: relative;
+}

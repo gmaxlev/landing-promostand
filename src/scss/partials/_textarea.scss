@@ -1,0 +1,25 @@
+.textarea {
+  display: inline-block;
+
+  & > textarea {
+    outline: none;
+    color: $color-d;
+    border: 0;
+    border-bottom: 1px solid $color-d;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    font-size: 14px;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    transition: opacity 0.5s;
+    max-width: 100%;
+    &:disabled {
+      opacity: 0.3;
+    }
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+}

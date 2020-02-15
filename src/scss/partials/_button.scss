@@ -1,0 +1,71 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+.button_a {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 21px;
+  letter-spacing: 3px;
+  transition: color 0.5s, background-color 0.5s;
+  transition-delay: 0.1s;
+  box-sizing: border-box;
+  max-width: 300px;
+  width: 100%;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+.button_b {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border: none;
+  background-color: $color-c;
+  color: #fff;
+  padding: 23px;
+  box-sizing: border-box;
+  letter-spacing: 3px;
+  transition: box-shadow 0.5s, background-color 0.5s, opacity 0.5s;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 27px 27px 40px 3px transparentize($color: $color-d, $amount: 0.44);
+  &:disabled {
+    opacity: 0.2 !important;
+    box-shadow: 0 0 0 0 transparent !important;
+    cursor: default !important;
+  }
+  &:hover {
+    background-color: darken($color-c, 3%);
+    box-shadow: 0 0 20px 0px transparentize($color: $color-d, $amount: 0.44);
+  }
+}
+
+.button_c {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 21px;
+  letter-spacing: 3px;
+  transition: color 0.5s, background-color 0.5s;
+  transition-delay: 0.1s;
+  box-sizing: border-box;
+  max-width: 360px;
+  width: 100%;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}

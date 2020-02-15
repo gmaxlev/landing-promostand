@@ -1,0 +1,17 @@
+.section {
+  padding-top: 65px;
+  padding-bottom: 72px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section_accent {
+  background-color: #ecedef;
+}
+
+.section_white {
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}

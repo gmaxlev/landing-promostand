@@ -8,7 +8,6 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xlm: 1500px,
   xxl: 1920px
 ) !default;
 
@@ -16,6 +15,14 @@ $grid-breakpoints: (
   Часто используемые цвета
 */
 
+$color-a: #a6b3bb;
+$color-b: #ecedef;
+$color-c: #1e3138;
+$color-d: #3b4a51;
+$color-e: #5d6366;
+
 /* 
   Шрифты
 */
+
+$font-a: "Montserrat", sans-serif;
