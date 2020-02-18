@@ -37,6 +37,20 @@
   font-weight: 500;
   line-height: 1.5rem;
   margin-bottom: 11px;
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
+.variant__mob-name {
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 11px;
+  display: none;
+  width: 100%;
+  @include media-breakpoint-down(xs) {
+    display: block;
+  }
 }
 
 .variant__comment {
@@ -55,4 +69,18 @@
     width: 100%;
     max-width: 100%;
   }
+}
+
+.variant__act {
+  margin-top: 20px;
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+  img {
+    display: none;
+  }
+}
+
+.variant__gallery {
+  display: none;
 }
